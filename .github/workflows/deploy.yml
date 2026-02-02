@@ -29,12 +29,12 @@ jobs:
             git pull origin main
 
             # Build Docker image
-            docker build -t devops-app .
+            docker build -t devops-container.
 
             # Stop & remove old container if exists
-            docker stop devops-app || true
-            docker rm devops-app || true
+            docker stop devops-container || true
+            docker rm devops-container || true
 
             # Run new container
-            docker run -d -p 3000:3000 --name devops-app devops-app
+            docker run -d -p 3000:3000 --name devops-container devops-container
           EOF
