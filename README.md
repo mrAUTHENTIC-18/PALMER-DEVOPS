@@ -16,7 +16,11 @@ This project demonstrates the deployment of a Node.js web application on AWS EC2
 ---
 
 ## Result
-The app runs on EC2 inside Docker and updates automatically via CI/CD. This demonstrates practical DevOps skills including cloud deployment, containerization, automation, and troubleshooting.
+The app runs on EC2 inside Docker and updates automatically via CI/CD. This demonstrates practical DevOps skills including 
+cloud deployment
+ containerization
+ automation
+ troubleshooting.
 
 ---
 
@@ -30,6 +34,4 @@ The app runs on EC2 inside Docker and updates automatically via CI/CD. This demo
 ## Author
 **ABUBAKAR ALAYANDE** – Junior DevOps Enthusiast  
 [GitHub Profile](https://github.com/mrAUTHENTIC-18)
-## Author
-**Alain Nde Abubakar**  
-[GitHub Profile](https://github.com/mrAUTHENTIC-18)
+
