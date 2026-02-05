@@ -5,15 +5,19 @@ pipeline {
         IMAGE_NAME = "palmerdevopsapp"
         CONTAINER_NAME = "palmerdevopsapp"
         PORT = "3000"
+        GIT_REPO = "https://github.com/mrAUTHENTIC-18/PALMER-DEVOPS.git"
+        GIT_BRANCH = "main"  // Make sure this matches your GitHub default branch
+        GIT_CREDENTIALS = "github-credentials"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                // Checkout code from GitHub
+                // Pull latest code from GitHub
                 git(
-                    url: 'https://github.com/mrAUTHENTIC-18/PALMER-DEVOPS.git',
-                    credentialsId: 'github-credentials'
+                    url: env.GIT_REPO,
+                    branch: env.GIT_BRANCH,
+                    credentialsId: env.GIT_CREDENTIALS
                 )
             }
         }
@@ -34,7 +38,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh '''
-                    # Build the Docker image
+                    # Build Docker image
                     docker build -t $IMAGE_NAME .
                 '''
             }
@@ -52,11 +56,10 @@ pipeline {
 
     post {
         success {
-            echo "✅ Palmer DevOps App deployed successfully!"
+            echo "✅ Palmer DevOps App deployed successfully on port $PORT!"
         }
         failure {
             echo "❌ Deployment failed. Check logs for errors."
         }
     }
 }
-
