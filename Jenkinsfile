@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git credentialsID: 'github-credentials',
-                url: 'https://github.com/mrAUTHENTIC-18/PALMER-DEVOPS.git', branch: 'main'
+                url: 'https://github.com/mrAUTHENTIC-18/PALMER-DEVOPS.git', branch:a 'main'
             }
         }
         stage('Build Docker Image') {
@@ -23,3 +23,4 @@ pipeline {
         }
     }
 }
+
