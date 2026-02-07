@@ -47,19 +47,3 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 sh '''
-                    # Run container on port 3000
-                    docker run -d -p $PORT:3000 --name $CONTAINER_NAME $IMAGE_NAME
-                '''
-            }
-        }
-    }
-
-    post {
-        success {
-            echo "✅ Palmer DevOps App deployed successfully on port $PORT!"
-        }
-        failure {
-            echo "❌ Deployment failed. Check logs for errors."
-        }
-    }
-}
