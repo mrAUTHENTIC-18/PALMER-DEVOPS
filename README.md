@@ -1,6 +1,6 @@
 # Palmer DevOps Beginner Project
 ## Project Overview
-This project demonstrates the deployment of a Node.js web application on AWS EC2 with Docker and a CI/CD pipeline using GitHub Actions. The app updates automatically with every push to GitHub.
+This project demonstrates the deployment of a Node.js web application on AWS EC2 with Docker and a CI/CD pipeline using GitHub jenkins. The app updates automatically with every push to GitHub.
 
 ---
 
