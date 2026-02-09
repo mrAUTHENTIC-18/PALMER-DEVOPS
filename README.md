@@ -12,7 +12,7 @@ This project demonstrates the deployment of a Node.js web application on AWS EC2
 5. **Dockerization** – Built a Docker image and ran the container for consistent deployment.  
 6. **CI/CD Pipeline** – Configured GitHub Actions to automate deployment on code push.  
 7. **Troubleshooting & Documentation** – Resolved workflow YAML errors, Docker image issues, and container status problems; documented the full process.
-
+8. added a jenkins to the file easy automation
 ---
 
 ## Result
