@@ -21,12 +21,13 @@ cloud deployment
  containerization
  automation
  troubleshooting.
-
+Added a reverse proxy with nginx 
+Configured DNS
+Issued valid ssl certificates
+Secured app with HTTPS
 ---
 
 ## Next Steps
-- Add Nginx reverse proxy  
-- Configure HTTPS/SSL  
 - Implement zero-downtime deployment  
 - Explore Terraform and Kubernetes
 
