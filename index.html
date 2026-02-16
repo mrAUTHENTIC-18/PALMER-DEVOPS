@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Interactive Pipeline</title>
+
+<style>
+:root {
+    --bg: #0f172a;
+    --text: #e2e8f0;
+    --card: #1e293b;
+    --accent: #38bdf8;
+}
+
+.light-mode {
+    --bg: #f1f5f9;
+    --text: #0f172a;
+    --card: #ffffff;
+    --accent: #2563eb;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.4s ease;
+}
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(90deg, var(--accent), #6366f1);
+    color: white;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.pipeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.tool {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    width: 180px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tool:hover {
+    transform: scale(1.05);
+}
+
+.arrow {
+    font-size: 30px;
+    animation: moveArrow 1s infinite alternate;
+    color: var(--accent);
+}
+
+@keyframes moveArrow {
+    from { transform: translateX(0); }
+    to { transform: translateX(10px); }
+}
+
+.explanation {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--accent);
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<button class="toggle-btn" onclick="toggleMode()">🌙 / ☀️</button>
+
+<header>
+    <h1>DevOps Interactive Pipeline</h1>
+   <b> <p>    ALAYANDE ABUBAKAR – DevOps Enthusiast 🚀</p> </b>
+</header>
+
+<section>
+<h2>🔁 How DevOps Tools Connect</h2>
+
+<div class="pipeline">
+
+<div class="tool">
+<h3>💻 Code</h3>
+<p>Node.js Development</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="tool">
+<h3>🗂 Git</h3>
+<p>Version Control</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="tool">
+<h3>🌐 GitHub</h3>
+<p>Code Hosting</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="tool">
+<h3>⚙️ CI/CD</h3>
+<p>Automation</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="tool">
+<h3>📦 Docker</h3>
+<p>Containers</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="tool">
+<h3>☁️ Cloud</h3>
+<p>AWS Deployment</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="tool">
+<h3>📊 Monitor</h3>
+<p>System Health</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>📖 Detailed Explanation of Each Tool</h2>
+
+<div class="explanation">
+<h3>💻 Code (Development Stage)</h3>
+<p>
+This is where everything begins. Developers write applications using languages like JavaScript, 
+Node.js, Python, or Java. This stage focuses on building features and solving problems.
+</p>
+</div>
+
+<div class="explanation">
+<h3>🗂 Git – Version Control</h3>
+<p>
+Git tracks every change made to your code. It allows developers to collaborate without overwriting each other’s work.
+If something breaks, Git allows you to revert to a previous working version.
+</p>
+</div>
+
+<div class="explanation">
+<h3>🌐 GitHub – Collaboration Hub</h3>
+<p>
+GitHub stores your project online and allows team collaboration. 
+It also triggers automation tools like CI/CD whenever new code is pushed.
+</p>
+</div>
+
+<div class="explanation">
+<h3>⚙️ CI/CD – Continuous Integration & Deployment</h3>
+<p>
+CI/CD automatically tests, builds, and deploys applications when code changes.
+Instead of manually uploading files to a server, automation handles the process.
+This increases speed and reduces human error.
+</p>
+</div>
+
+<div class="explanation">
+<h3>📦 Docker – Containerization</h3>
+<p>
+Docker packages your application and all its dependencies into a container.
+This ensures your app runs the same way in development, testing, and production environments.
+</p>
+</div>
+
+<div class="explanation">
+<h3>☁️ Cloud – Hosting & Infrastructure</h3>
+<p>
+Cloud platforms like AWS provide servers where your Docker containers run.
+They allow scalability, reliability, and global accessibility.
+</p>
+</div>
+
+<div class="explanation">
+<h3>📊 Monitoring – Observability</h3>
+<p>
+Monitoring tools track system performance such as CPU usage, memory, uptime, and errors.
+This ensures problems are detected early before users are affected.
+</p>
+</div>
+
+</section>
+
+<section>
+<h2>🌍 Why DevOps is Important</h2>
+<p>
+DevOps connects all these tools into one automated pipeline.
+It improves speed, reliability, collaboration, and scalability.
+Instead of working separately, development and operations move together in one continuous cycle.
+</p>
+</section>
+
+<footer>
+
+<div style="max-width:1100px; margin:auto; padding:20px;">
+
+    <h3>📱 Scan My Website</h3>
+    <p>Scan this barcode to access my DevOps project instantly.</p>
+
+    <img src="/barcode.png" 
+         alt="Website Barcode" 
+         width="200" 
+         style="margin:20px 0; border-radius:12px;">
+
+    <br>
+
+    <a href="/barcode.png" download>
+        <button style="
+            padding:10px 18px;
+            border:none;
+            border-radius:25px;
+            background:white;
+            color:var(--accent);
+            font-weight:bold;
+            cursor:pointer;">
+            Download Barcode
+        </button>
+    </a>
+
+    <p style="margin-top:25px;">
+        © 2026 DevOps Learning Project | Built by 
+        <strong>Alayande ABUBAKAR</strong> – DevOps Enthusiast 🚀
+    </p>
+
+</div>
+
+</footer>
