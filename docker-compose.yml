@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  palmer-app:
+    image: palmerdevops
+    container_name: palmer-devops
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
