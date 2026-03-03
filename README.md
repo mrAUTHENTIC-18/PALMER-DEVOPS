@@ -2,7 +2,7 @@
 ## Project Overview
 This project demonstrates the deployment of a Node.js web application on AWS EC2 with Docker and a CI/CD pipeline using GitHub jenkins. The app updates automatically with every push to GitHub.
 
----
+--
 
 ## Steps Completed
 1. **Node.js App** – Created a simple HTTP server and tested locally.  
