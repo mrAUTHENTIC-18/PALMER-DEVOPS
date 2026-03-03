@@ -31,13 +31,13 @@ jobs:
             cd PALMER-DEVOPS
             git pull origin main
 
-            docker build -t palmerdevopsapp .
+            docker build -t palmerdevops .
 
-            docker stop palmerdevopsapp || true
-            docker rm palmerdevopsapp || true
+            docker stop palmer-devops || true
+            docker rm palmer-devops || true
 
             docker run -d \
-              --name palmerdevopsapp \
+              --name palmer-devops \
               -p 3000:3000 \
-              palmerdevopsapp
+              palmer-devops
                          "
