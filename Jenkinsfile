@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "palmerdevopsapp"
-        CONTAINER_NAME = "palmerdevopsapp"
+        IMAGE_NAME = "palmerdevops"
+        CONTAINER_NAME = "palmer-devops"
         PORT = "3000"
         GIT_REPO = "https://github.com/mrAUTHENTIC-18/PALMER-DEVOPS.git"
         GIT_BRANCH = "main"  // Make sure this matches your GitHub default branch
