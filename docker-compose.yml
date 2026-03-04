@@ -8,7 +8,6 @@ services:
     environment:
       NODE_ENV: production
 
-# Optional: define a custom network for isolation
 networks:
   app-network:
     driver: bridge
