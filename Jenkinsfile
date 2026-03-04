@@ -2,18 +2,15 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "palmerdevops"
-        CONTAINER_NAME = "palmer-devops"
-        PORT = "3000"
         GIT_REPO = "https://github.com/mrAUTHENTIC-18/PALMER-DEVOPS.git"
-        GIT_BRANCH = "main"  // Make sure this matches your GitHub default branch
+        GIT_BRANCH = "main"
         GIT_CREDENTIALS = "github-credentials"
     }
 
     stages {
+
         stage('Checkout') {
             steps {
-                // Pull latest code from GitHub
                 git(
                     url: env.GIT_REPO,
                     branch: env.GIT_BRANCH,
@@ -22,40 +19,43 @@ pipeline {
             }
         }
 
-        stage('Clean Previous Containers') {
+        stage('Clean Previous Deployment') {
             steps {
                 sh '''
-                    # Stop old container if exists
-                    docker stop $CONTAINER_NAME || true
-                    # Remove old container if exists
-                    docker rm $CONTAINER_NAME || true
-                    # Remove unused Docker networks
-                    docker network prune -f
+                    echo "Stopping existing containers..."
+                    docker compose down || true
                 '''
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Build Docker Images') {
             steps {
                 sh '''
-                    # Build Docker image
-                    docker build -t $IMAGE_NAME .
+                    echo "Building Docker images..."
+                    docker compose build
                 '''
             }
         }
 
-        stage('Run Docker Container') {
+        stage('Deploy Application') {
             steps {
                 sh '''
-                     docker run -d -p $PORT:3000 --name $CONTAINER_NAME $IMAGE_NAME
+                    echo "Starting containers..."
+                    docker compose up -d
                 '''
+            }
+        }
+
+        stage('Verify Deployment') {
+            steps {
+                sh 'docker ps'
             }
         }
     }
 
     post {
         success {
-            echo "✅ Palmer DevOps App deployed successfully on port $PORT!"
+            echo "✅ Palmer DevOps App deployed successfully with Docker Compose!"
         }
         failure {
             echo "❌ Deployment failed. Check logs for errors."
