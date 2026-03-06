@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Stopping existing containers..."
-                    docker-compose down || true
+                    docker compose down || true
                 '''
             }
         }
@@ -32,7 +32,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Building Docker images..."
-                    docker-compose build --no-cache
+                    docker compose build --no-cache
                 '''
             }
         }
@@ -41,7 +41,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Starting containers..."
-                    docker-compose up -d
+                    docker compose up -d
                 '''
             }
         }
