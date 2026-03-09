@@ -1,10 +1,8 @@
 
-
 services:
-  palmer-app:
-    image: palmerdevops
+  app:
     container_name: palmer-devops
+    build: .
     ports:
       - "3000:3000"
-    restart: unless-stopped
-
+    restart: always
