@@ -31,13 +31,8 @@ jobs:
             cd PALMER-DEVOPS
             git pull origin main
 
-            docker build -t palmerdevops .
-
-            docker stop palmer-devops || true
-            docker rm palmer-devops || true
-
-            docker run -d \
-              --name palmer-devops \
+            docker compose down
+            docker compose up -d --build
               -p 3000:3000 \
               palmer-devops
                          "
