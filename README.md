@@ -5,7 +5,7 @@ This project demonstrates the deployment of a Node.js web application on AWS EC2
 --
 
 ## Steps Completed
-1. **Node.js App** – Created a simple HTTP server and tested locally.  
+1. **Node.js App** – Created a simple HTTP/web server and tested locally.  
 2. **GitHub** – Version-controlled and pushed the project to GitHub.  
 3. **AWS EC2** – Launched an instance, configured security groups, installed Node.js, Git,docker and docker compose .  
 4. **Server Deployment** – Cloned the repo and ran the app on EC2 public IP.  
