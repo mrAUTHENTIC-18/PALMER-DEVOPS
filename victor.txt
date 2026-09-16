@@ -9,7 +9,11 @@
 <body>
 
     <header>
-        <h1>My DevOps  path</h1>
+<<<<<<< HEAD
+        
+=======
+        <h1>My DevOps engineering Journey</h1>
+>>>>>>> 1989e4732d79809c1b188c9ff7682b4dc50152d0
         <p>Documenting my journey from beginner to DevOps Engineer.</p>
     </header>
 
