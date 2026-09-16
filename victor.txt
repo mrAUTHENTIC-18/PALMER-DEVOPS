@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DevOps Journey</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My DevOps Journey</h1>
+        <p>Documenting my journey from beginner to DevOps Engineer.</p>
+    </header>
+
+    <main>
+
+        <!-- Introduction -->
+        <section>
+            <h2>About My Journey</h2>
+            <p>
+                I recently started my DevOps journey and have been learning
+                the fundamentals of Linux, Git, GitHub, version control,
+                file management, permissions, and Git workflows.
+            </p>
+        </section>
+
+        <!-- Linux -->
+        <section>
+            <h2>1. Linux Fundamentals</h2>
+
+            <p>
+                Linux is one of the foundational technologies I am learning
+                as part of my DevOps journey.
+            </p>
+
+            <h3>Commands I Have Learned</h3>
+
+            <ul>
+                <li><strong>ls</strong> - Lists files and directories.</li>
+                <li><strong>ls -la</strong> - Shows files, including hidden files.</li>
+                <li><strong>cd</strong> - Changes directory.</li>
+                <li><strong>cd ..</strong> - Moves to the parent directory.</li>
+                <li><strong>mkdir</strong> - Creates a directory.</li>
+                <li><strong>touch</strong> - Creates a new file.</li>
+                <li><strong>mv</strong> - Moves or renames a file.</li>
+                <li><strong>cp</strong> - Copies a file.</li>
+                <li><strong>rm</strong> - Removes a file.</li>
+                <li><strong>cat</strong> - Displays the contents of a file.</li>
+                <li><strong>pwd</strong> - Shows the current directory.</li>
+                <li><strong>ps</strong> - Displays running processes.</li>
+            </ul>
+        </section>
+
+        <!-- File Permissions -->
+        <section>
+            <h2>2. Linux File Permissions</h2>
+
+            <p>
+                I learned about Linux file permissions and the meaning of
+                read, write, and execute permissions.
+            </p>
+
+            <ul>
+                <li>Read (R) = 4</li>
+                <li>Write (W) = 2</li>
+                <li>Execute (X) = 1</li>
+            </ul>
+
+            <h3>Permission Commands</h3>
+
+            <ul>
+                <li><strong>chmod</strong> - Changes file permissions.</li>
+                <li><strong>chown</strong> - Changes file ownership.</li>
+            </ul>
+        </section>
+
+        <!-- Git -->
+        <section>
+            <h2>3. Git & Version Control</h2>
+
+            <p>
+                I learned that Git is a distributed version control system
+                used to track changes in projects and manage different
+                versions of code.
+            </p>
+
+            <h3>Git Commands I Have Learned</h3>
+
+            <ul>
+                <li><strong>git status</strong> - Checks the current state of the repository.</li>
+                <li><strong>git add</strong> - Moves changes into the staging area.</li>
+                <li><strong>git commit</strong> - Records changes in Git history.</li>
+                <li><strong>git push</strong> - Uploads local commits to a remote repository.</li>
+                <li><strong>git pull</strong> - Retrieves changes from a remote repository.</li>
+                <li><strong>git branch</strong> - Creates and manages branches.</li>
+                <li><strong>git merge</strong> - Combines changes from different branches.</li>
+            </ul>
+        </section>
+
+        <!-- Git Lifecycle -->
+        <section>
+            <h2>4. Git Lifecycle</h2>
+
+            <p>
+                One of the most important concepts I have learned is the
+                Git lifecycle.
+            </p>
+
+            <ol>
+                <li>Working Directory</li>
+                <li>Staging Area</li>
+                <li>Local Repository</li>
+                <li>Remote Repository</li>
+            </ol>
+
+            <p>
+                The basic workflow is:
+            </p>
+
+            <pre>
+Working Directory
+       ↓
+   git add
+       ↓
+ Staging Area
+       ↓
+  git commit
+       ↓
+ Local Repository
+       ↓
+   git push
+       ↓
+ GitHub
+            </pre>
+        </section>
+
+        <!-- GitHub -->
+        <section>
+            <h2>5. GitHub</h2>
+
+            <p>
+                I learned that GitHub is an online platform used to host
+                Git repositories and collaborate with other developers.
+            </p>
+
+            <p>
+                Git and GitHub are not the same thing. Git handles version
+                control, while GitHub provides an online platform for
+                hosting and collaboration.
+            </p>
+        </section>
+
+        <!-- SSH -->
+        <section>
+            <h2>6. SSH</h2>
+
+            <p>
+                I have started learning about SSH and how SSH keys can be
+                used to authenticate with remote systems and GitHub without
+                repeatedly entering a password.
+            </p>
+
+            <p>
+                I also learned the difference between using SSH and HTTPS
+                when working with Git repositories.
+            </p>
+        </section>
+
+        <!-- Git Merge -->
+        <section>
+            <h2>7. Git Branching & Merging</h2>
+
+            <p>
+                I learned that branches allow developers to work on features
+                or changes separately without immediately affecting the
+                main branch.
+            </p>
+
+            <p>
+                The <strong>git merge</strong> command is used to combine
+                changes from one branch into another.
+            </p>
+
+            <pre>
+main
+  \
+   feature
+       ↓
+   git merge
+       ↓
+      main
+            </pre>
+        </section>
+
+        <!-- Current Progress -->
+        <section>
+            <h2>My Current Progress</h2>
+
+            <p>
+                I am currently building my foundation in Linux and Git.
+                My next areas of learning include networking, cloud
+                computing, Docker, CI/CD, Infrastructure as Code,
+                and eventually Kubernetes.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            My DevOps Journey - Learning, Building and Improving Every Day.
+        </p>
+    </footer>
+
+</body>
+</html>
